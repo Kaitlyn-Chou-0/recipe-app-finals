@@ -7,33 +7,8 @@ All you have to do is just take a photo of your ingredients, and you'll receive 
 
 
 Work Flow of App
-┌─────────────────────────────────────────────────────────────────────-┐
-│                        WHAT'S FOR DINNER                             │
-│                                                                      │
-│  ┌─────────────-─┐    ┌──────────────┐    ┌───────────────────────┐  │
-│  │  IMAGE INPUT  │───▶│   AGENT 1    │───▶│  INGREDIENT INVENTORY │  │
-│  │  User uploads │    │  Inventory   │    │  Parsed JSON output   │  │
-│  │  photo(s) +   │    │  Expert      │    │                       │  │
-│  │  optional     │    │              │    │  User can add,        │  │
-│  │  descriptions │    │  Custom      │    │  delete, or edit      │  │
-│  └──────────────-┘    │  system      │    │  ingredients before   │  │
-│                       │  prompt +    │    │  proceeding           │  │
-│                       │  JSON schema │    │                       │  │
-│                       └──────────────┘    └───────────┬───────────┘  │
-│                                                       │              │
-│                                                       ▼              │
-│  ┌──────────────┐    ┌──────────────┐    ┌───────────────────────┐   │
-│  │    OUTPUT    │◀───│   AGENT 2    │◀───│  USER PREFERENCES     │   │
-│  │              │    │ Nutritionist │    │  Serving size,        │   │
-│  │  Recipe +    │    │  & Recipe    │    │  cuisine preference,  │   │
-│  │  Cooking     │    │  Developer   │    │  dietary restrictions │   │
-│  │  Instructions│    │              │    │                       │   │
-│  │  + Nutrition │    │  Custom      │    │  If unspecified →     │   │
-│  │  Info        │    │  system      │    │  agent selects        │   │
-│  │              │    │  prompt +    │    │  autonomously         │   │
-│  └──────────────┘    │  JSON schema │    └───────────────────────┘   │
-│                      └──────────────┘                                │
-└─────────────────────────────────────────────────────────────────────-┘
+
+<img width="1491" height="903" alt="Screenshot 2026-03-23 at 8 14 08 PM" src="https://github.com/user-attachments/assets/62ad61a8-0d31-47c6-8342-74f5d38e0684" />
 
 A small story on how the app name was chosen, growing up me and my sister loved this family comedy called Everybody Loves Raymond, and at the end of every episode, there would be a snapshot of a dinnertime table with the headline "What's for dinner". My sister reminded me of our fond show while discussing my app, and she inspired me to name my app after our favorite segment of the show.
 
